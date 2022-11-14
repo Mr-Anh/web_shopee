@@ -4,7 +4,7 @@
     background-image: linear-gradient( #f6402e, #ff6533);
     position: fixed;
     top: 0;
-    z-index: 6;
+    z-index: 1;
 }
 
 .header__navbar {
@@ -65,7 +65,7 @@
 }
 
 .header__navbar-item--bold {
-    font-weight: 500;
+    margin-top: 2px;
 }
 
 .header__navbar-item--seperate::after {
@@ -74,7 +74,7 @@
     position: absolute;
     height: 15px;
     border-right: 1.5px solid hsla(0,0%,100%,.33);
-    right: -10px;
+    right: -8px;
     left: 0;
     transform: translateY(-80%);
 }
@@ -140,7 +140,7 @@
     border: 0.5px solid rgb(223, 216, 216);
     border-radius: 3px;
     cursor: default;
-    transform-origin: calc(100% - 20px) top;
+    transform-origin: calc(100% - 35px) top;
     animation: headerNotifyGrowth ease-in 0.2s;
     will-change: opacity transform;
     display: none;
@@ -201,6 +201,8 @@
     padding-left: 0;
     width: 100%;
     list-style: none;
+    max-height: 56vh;
+    overflow-y: auto;
 }
 
 .header__notif-item {
@@ -220,6 +222,7 @@
 
 .header__notif-inf {
     padding-left: 14px;
+    margin-top: -2px;
 }
 
 .header__notif-name {
@@ -258,7 +261,7 @@
     border-radius: 3px;
     box-shadow: 0 1px 3.125rem 0 rgb(0 0 0 / 20%);
     cursor: default;
-    transform-origin: calc(100% - 20px) top;
+    transform-origin: calc(100% - 40px) top;
     animation: headerNotifyGrowth ease-in 0.2s;
     will-change: opacity transform;
     display: none;
@@ -410,39 +413,53 @@
 
 
 /* Modal Layout */
-.modal {
-    display: flex;
+.abc.modal {
     position: fixed;
+    display: flex;
     top: 0;
     right: 0;
     bottom: 0;
     left: 0;
+    z-index: 7;
 }
 
+.abc{
+    display: none;
+}
+
+
+
 .modal__overlay {
-    position: absolute;
     width: 100%;
     height: 100%;
     background-color: rgba(0, 0, 0, 0.4);
     animation: FadeIn linear 0.1s;
+    /* display: none; */
 }
 
 .modal__body {
-    position: relative;
+    /* min-height: 545px; */
+    width: 400px;
     margin: auto;
     margin-top: 95px;
     background-color: var(--white-color);
     border-radius: 4px;
-    animation: growth linear 0.1s;
-    --growth-from : 0.7;
+    animation: growth linear 0.2s;
+    --growth-from : 0.3;
     --growth-to : 1;
+    /* scroll-behavior: unset; */
 }
+
 
 /* Authentication Form */
 .auth-form {
+    height: 400px;
     width: 400px;
     box-sizing: border-box;
-    min-height: 80px;
+}
+
+.auth-form-register {
+    min-height: 545px;
 }
 
 .auth-form__header {
@@ -496,11 +513,14 @@
     border-radius: 2px;
     outline: none;
     margin-bottom: 20px;
+    color: #000;
 }
 
-.auth-form__input:focus {
-    border-color: #333;
+.auth-form__input--login::placeholder {
+    color: var(--text-color);
 }
+
+
 
 .auth-form__input--press {
     box-shadow: inset 0 2px 0 rgb(0 0 0 / 2%);
@@ -1624,7 +1644,6 @@ i.grid-product-item__action-rating--gold {
     display: block;
     width: 100%;
     height: 100%;
-    height: 90px;
     background-color: #f5f5f5;
     padding: 45px 0;
 }
