@@ -140,8 +140,8 @@
     border: 0.5px solid rgb(223, 216, 216);
     border-radius: 3px;
     cursor: default;
-    transform-origin: calc(100% - 35px) top;
-    animation: headerNotifyGrowth ease-in 0.2s;
+    transform-origin: calc(100% - 37px) top;
+    animation: headerNotifyGrowth ease-in 0.25s;
     will-change: opacity transform;
     display: none;
 }
@@ -261,8 +261,8 @@
     border-radius: 3px;
     box-shadow: 0 1px 3.125rem 0 rgb(0 0 0 / 20%);
     cursor: default;
-    transform-origin: calc(100% - 40px) top;
-    animation: headerNotifyGrowth ease-in 0.2s;
+    transform-origin: calc(100% - 46px) top;
+    animation: headerNotifyGrowth ease-in 0.25s;
     will-change: opacity transform;
     display: none;
 }
@@ -352,8 +352,8 @@
     border-radius: 3px;
     box-shadow: 0 1px 3.125rem 0 rgb(0 0 0 / 20%);
     cursor: default;
-    transform-origin: calc(100% - 20px) top;
-    animation: headerNotifyGrowth ease-in 0.2s;
+    transform-origin: calc(100% - 37px) top;
+    animation: headerNotifyGrowth ease-in 0.25s;
     will-change: opacity transform;
     display: none;
 }
@@ -901,8 +901,8 @@
 
 .header__cart:hover .header__cart-list {
     display: block;
-    transform-origin: calc(100% - 20px) top;
-    animation: headerNotifyGrowth ease-in 0.2s;
+    transform-origin: calc(98% - 20px) top;
+    animation: headerNotifyGrowth ease-in .25s;
 }
 
 
