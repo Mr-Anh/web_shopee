@@ -139,6 +139,7 @@
     background-color: var(--white-color);
     border: 0.5px solid rgb(223, 216, 216);
     border-radius: 3px;
+    box-shadow: 1px 23px 3.125rem 0 rgb(0 0 0 / 20%);
     cursor: default;
     transform-origin: calc(100% - 37px) top;
     animation: headerNotifyGrowth ease-in 0.25s;
